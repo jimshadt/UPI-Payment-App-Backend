@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const MAPPGQLRoot_1 = require("./MAPPGQLRoot");
+const MAPPCors_1 = require("./MAPPCors");
+const express = require("express");
+var MAPP = express.Router();
+MAPP.options('*', MAPPCors_1.default);
+MAPP.use(MAPPCors_1.default);
+MAPP.use(MAPPGQLRoot_1.default);
+exports.default = MAPP;

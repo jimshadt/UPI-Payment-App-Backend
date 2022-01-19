@@ -1,0 +1,20 @@
+{
+    "request":{
+        "type":"object",
+        "properties":{
+
+        },
+        "description":"user viewing creditline"
+
+    },
+    "response":{
+        "type":"object",
+        "properties":{
+            "creditline":{
+                "description":"user creditline",
+                "type":"string"
+            }
+        }
+
+    }
+}

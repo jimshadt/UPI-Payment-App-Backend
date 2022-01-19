@@ -1,0 +1,28 @@
+{
+    "request": {
+        "type": "object",
+        "properties": {
+            "recipient_email": {
+                "description": "recipient user email",
+                "type": "string",
+                "required": true
+            },
+            "amount": {
+                "description": "amount to be sent",
+                "type": "float",
+                "required":true
+            }
+        },
+        "description": "user sending amount"
+    },
+    "response": {
+        "type": "object",
+        "properties": {
+            "message": {
+                "description": "message",
+                "type": "string"
+            }
+        },
+        "required": []
+    }
+}

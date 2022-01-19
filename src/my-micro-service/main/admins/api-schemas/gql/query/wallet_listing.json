@@ -1,0 +1,45 @@
+{
+    "request": {
+        "type": "object",
+        "properties": {
+            "walletName": {
+                "description": "wallet_name",
+                "type": "string"
+            },
+            "amount": {
+                "description": "amount",
+                "type": "string"
+            }
+            
+        },
+        "required": [],
+        "description": "admin listing his wallets"
+    },
+    "response": {
+        "type": "object",
+        "properties": {
+            "data": {
+                "type": "array",
+                "description": "list of wallets",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "_id": {
+                            "type": "string",
+                            "description": "_id of the wallet"
+                        },
+                        "walletName": {
+                            "type": "string",
+                            "description": "name of the wallet"
+                        },
+                        "amount": {
+                            "type": "string",
+                            "description": "amount in wallet"
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

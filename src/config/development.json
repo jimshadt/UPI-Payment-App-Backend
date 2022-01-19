@@ -1,0 +1,14 @@
+{
+  "port": 3000,
+  "microapps": {
+    "port": 3092
+  },
+  "db": {
+    "base_url": "mongodb://localhost:27017",
+    "name": "dev_mapp"
+  },
+  "vault": {
+    "base": "",
+    "enabled": false
+  }
+}

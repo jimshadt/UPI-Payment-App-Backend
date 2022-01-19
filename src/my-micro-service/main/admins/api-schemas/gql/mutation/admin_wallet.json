@@ -1,0 +1,32 @@
+{
+    "request": {
+        "type": "object",
+        "properties": {
+            "walletName": {
+                "description": "wallet_name",
+                "type": "string",
+                "required":true
+            },
+            "amount": {
+                "description": "amount",
+                "type": "string",
+                "required": true
+            }
+            
+        },
+        "required": [],
+        "description": "admin creating a wallet"
+    },
+    "response": {
+        "type": "object",
+        "properties": {
+            "message": {
+                "description": "message",
+                "type": "string"
+            }
+        },
+        "required": [
+            "success"
+        ]
+    }
+}

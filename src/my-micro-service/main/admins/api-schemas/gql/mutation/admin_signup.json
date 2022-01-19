@@ -1,0 +1,40 @@
+{
+    "request": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "description": "name",
+                "type": "string",
+                "required": true
+            },
+            "email": {
+                "description": "email",
+                "type": "string",
+                "required": true
+            },
+            "phone_number": {
+                "description": "phone number",
+                "type": "string",
+                "required": true
+            },
+            "password": {
+                "description": "password",
+                "type": "string",
+                "required": true
+            }
+        },
+        "description": "admin signing up"
+    },
+    "response": {
+        "type": "object",
+        "properties": {
+            "message": {
+                "description": "message",
+                "type": "string"
+            }
+        },
+        "required": [
+            "success"
+        ]
+    }
+}

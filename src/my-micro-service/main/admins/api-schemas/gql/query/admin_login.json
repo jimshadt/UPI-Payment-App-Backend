@@ -1,0 +1,35 @@
+{
+    "request": {
+        "type": "object",
+        "properties": {
+            "email": {
+                "description": "email",
+                "type": "string",
+                "required": true
+            },
+            "password": {
+                "description": "password",
+                "type": "string",
+                "required": true
+            }
+        },
+        "required": [],
+        "description": "The admin_login api trying to login"
+    },
+    "response": {
+        "type": "object",
+        "properties": {
+            "message": {
+                "description": "message",
+                "type": "string"
+            },
+            "token": {
+                "description": "token",
+                "type": "string"
+            }
+        },
+        "required": [
+            "success"
+        ]
+    }
+}

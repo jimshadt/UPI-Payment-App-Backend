@@ -1,0 +1,81 @@
+{
+    "request":{
+        "type":"object",
+        "properties":{
+            "_id": {
+                "type": "string",
+                "description":"_id of the user",
+                "required":true
+            }
+        },
+        "description":"user viewing transaction history"
+
+    },
+    "response": {
+        "type": "object",
+        "properties": {
+            "data": {
+                "type": "array",
+                "description": "user's transaction history",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "_id": {
+                            "type": "string",
+                            "description": "_id of the wallet"
+                        },
+                        "to_user": {
+                            "type":"object",
+                            "properties": {
+                                "_id": {
+                                    "type": "string",
+                                    "description":"_id of the user"
+                                },
+                                "username": {
+                                    "type": "string",
+                                    "description":"username of the user"
+                                },
+                                "email": {
+                                    "type": "string",
+                                    "description":"email of the user"
+                                }
+                            }
+                            
+                        },
+                        "from_user": {
+                            "type":"object",
+                            "properties": {
+                                "_id": {
+                                    "type": "string",
+                                    "description":"_id of the user"
+                                },
+                                "username": {
+                                    "type": "string",
+                                    "description":"username of the user"
+                                },
+                                "email": {
+                                    "type": "string",
+                                    "description":"email of the user"
+                                }
+                            }
+                            
+                        },
+                        "transaction_amount": {
+                            "type": "string",
+                            "description": "amount in wallet"
+                        },
+                        "before_balance": {
+                            "type": "string",
+                            "description": "balance before transaction"
+                        },
+                        "after_balance": {
+                            "type": "string",
+                            "description": "balance after transaction"
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

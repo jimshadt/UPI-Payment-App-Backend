@@ -1,0 +1,65 @@
+{
+    "dependencies": [
+    
+        {
+            "name": "admin_login",
+            "path": "./gql/query/admin_login.json",
+            "type": "Query"
+        },
+        {
+            "name": "admin_signup",
+            "path": "./gql/mutation/admin_signup.json",
+            "type": "Mutation"
+        },
+        {
+            "name": "health",
+            "path": "./gql/query/health_API.json",
+            "type": "Query"
+        },
+        {
+            "name": "admin_wallet",
+            "path": "./gql/mutation/admin_wallet.json",
+            "type": "Mutation"
+        },
+        {
+            "name": "wallet_listing",
+            "path": "./gql/query/wallet_listing.json",
+            "type": "Query"
+        },
+        {
+            "name": "create_user",
+            "path": "./gql/mutation/create_user.json",
+            "type": "Mutation"
+        },
+        {
+            "name": "list_users",
+            "path": "./gql/query/list_users.json",
+            "type": "Query"
+        },
+        {
+            "name": "remove_user",
+            "path": "./gql/mutation/remove_user.json",
+            "type": "Mutation"
+        },
+        {
+            "name": "update_user",
+            "path": "./gql/mutation/update_user.json",
+            "type": "Mutation"
+        },
+        {
+            "name": "view_transaction_history_of_user",
+            "path": "./gql/query/view_transaction_history_of_user.json",
+            "type": "Query"
+        },
+        {
+            "name": "list_transactions",
+            "path": "./gql/query/list_transactions.json",
+            "type": "Query"
+        },
+        {
+            "name": "transaction_details",
+            "path": "./gql/query/transaction_details.json",
+            "type": "Query"
+        }
+    ]
+}

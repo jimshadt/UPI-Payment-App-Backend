@@ -1,0 +1,32 @@
+{
+    "request": {
+        "type": "object",
+        "properties": {
+            "email": {
+                "description": "email",
+                "type": "string",
+                "required":true
+            },
+            "username": {
+                "description": "username",
+                "type": "string"
+            },
+            "_id": {
+                "description": "ID",
+                "type": "string",
+                "requires":true
+            }
+        },
+        "description": "update user"
+    },
+    "response": {
+        "type": "object",
+        "properties": {
+            "message": {
+                "description": "message",
+                "type": "string"
+            }
+        },
+        "required": []
+    }
+}

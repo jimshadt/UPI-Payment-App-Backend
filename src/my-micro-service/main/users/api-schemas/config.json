@@ -1,0 +1,29 @@
+{
+    "dependencies": [
+        {
+            "name": "user_login",
+            "path": "./gql/query/user_login.json",
+            "type": "Query"
+        },
+        {
+            "name": "view_creditline",
+            "path": "./gql/query/view_creditline.json",
+            "type": "Query"
+        },
+        {
+            "name": "user_signup",
+            "path": "./gql/mutation/user_signup.json",
+            "type": "Mutation"
+        },
+        {
+            "name": "send_amount",
+            "path": "./gql/mutation/send_amount.json",
+            "type": "Mutation"
+        },
+        {
+            "name": "view_transaction_history",
+            "path": "./gql/query/view_transaction_history.json",
+            "type": "Query"
+        }
+    ]
+}

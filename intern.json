@@ -1,0 +1,44 @@
+{
+    "suites": ["tests/connection-tests/**/*.js"],
+    "serverPort": 9093,
+    "socketPort": 9094,
+    "serveOnly": true,
+    "tunnelOptions": {
+        "drivers": [{
+            "name": "chrome",
+            "version": "2.36"
+        }]
+    },
+    "browser": {
+        "loader": {
+            "script": "systemjs"
+        },
+        "plugins": {
+            "script": "system-config.js",
+            "useLoader": true
+        }
+    },
+    "environments": [
+
+        {
+            "browserName": "chrome",
+            "fixSessionCapabilities": "no-detect",
+            "chromeOptions": {
+                "args": ["headless", "disable-gpu"]
+            }
+        }
+    ],
+    "configs": {
+
+        "chrome": {
+            "environments": "chrome",
+            "tunnelOptions": {
+                "tunnel": "selenium",
+                "drivers": [{
+                    "name": "chrome",
+                    "version": "2.36"
+                }]
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "request": {
+        "type": "object",
+        "properties": {
+            "email": {
+                "description": "email",
+                "type": "string",
+                "required":true
+            }
+        },
+        "description": "delete user"
+    },
+    "response": {
+        "type": "object",
+        "properties": {
+            "message": {
+                "description": "message",
+                "type": "string"
+            }
+        },
+        "required": []
+    }
+}

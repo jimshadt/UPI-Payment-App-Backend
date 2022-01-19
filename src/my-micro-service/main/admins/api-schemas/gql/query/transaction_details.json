@@ -1,0 +1,92 @@
+{
+    "request": {
+        "type": "object",
+        "properties": {
+            "transaction_id": {
+                "description": "Transaction id",
+                "type": "string",
+                "required":true
+            }
+        },
+        "required": [],
+        "description": "admin listing details of a transaction"
+    },
+    "response": {
+        "type": "object",
+        "properties": {
+            "data": {
+                "type": "array",
+                "description": "Details of transactions",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "_id": {
+                            "type": "string",
+                            "description": "_id of the transaction"
+                        },
+                        "to_user": {
+                            "type":"object",
+                            "properties": {
+                                "_id": {
+                                    "type": "string",
+                                    "description":"_id of the user"
+                                },
+                                "username": {
+                                    "type": "string",
+                                    "description":"username of the user"
+                                },
+                                "email": {
+                                    "type": "string",
+                                    "description":"email of the user"
+                                },
+                                "mobile": {
+                                    "type": "string",
+                                    "description":"mobile of the user"
+                                }
+                            }
+                            
+                        },
+                        "from_user": {
+                            "type":"object",
+                            "properties": {
+                                "_id": {
+                                    "type": "string",
+                                    "description":"_id of the user"
+                                },
+                                "username": {
+                                    "type": "string",
+                                    "description":"username of the user"
+                                },
+                                "email": {
+                                    "type": "string",
+                                    "description":"email of the user"
+                                },
+                                "mobile": {
+                                    "type": "string",
+                                    "description":"mobile of the user"
+                                }
+                            }
+                        },
+                        "transaction_amount": {
+                            "type": "string",
+                            "description": "transaction amount"
+                        },
+                        "before_balance": {
+                            "type": "string",
+                            "description": "balance before transaction"
+                        },
+                        "after_balance": {
+                            "type": "string",
+                            "description": "balance after transaction"
+                        },
+                        "transaction_id": {
+                            "type": "string",
+                            "description": "transaction id"
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
