@@ -6,7 +6,7 @@ const db = new DBInterface();
 const list_transactions = async (args: any, req: any, user: any) => {
   try {
     let obj: any = await db.transactions
-    .find()
+    .find({isListed:true})
     .populate("from_user",["_id","username","email"])
     .populate("to_user",["_id","username","email"])
     .lean().exec();

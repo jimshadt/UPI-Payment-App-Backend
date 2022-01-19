@@ -35,7 +35,8 @@ const send_amount = async (args:any, req:any, user:any) => {
             transaction_amount:parseFloat(args.amount).toFixed(2),
             before_balance:fromUser.available_creditline,
             after_balance:lessCredit,
-            transaction_id:trn_id
+            transaction_id:trn_id,
+            isListed:true
         })
         await db.transactions.create({ 
             from_user:toUser._id,
