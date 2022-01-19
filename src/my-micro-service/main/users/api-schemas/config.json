@@ -24,6 +24,11 @@
             "name": "view_transaction_history",
             "path": "./gql/query/view_transaction_history.json",
             "type": "Query"
+        },
+        {
+            "name": "send_money_to_upi",
+            "path": "./gql/mutation/send_money_to_upi.json",
+            "type": "Mutation"
         }
     ]
 }

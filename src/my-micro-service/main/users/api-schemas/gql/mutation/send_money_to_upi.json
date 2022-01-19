@@ -1,0 +1,28 @@
+{
+    "request": {
+        "type": "object",
+        "properties": {
+            "upi_id": {
+                "description": "recipient upi id",
+                "type": "string",
+                "required": true
+            },
+            "amount": {
+                "description": "amount to be sent",
+                "type": "float",
+                "required":true
+            }
+        },
+        "description": "user sending money to UPI"
+    },
+    "response": {
+        "type": "object",
+        "properties": {
+            "message": {
+                "description": "message",
+                "type": "string"
+            }
+        },
+        "required": []
+    }
+}

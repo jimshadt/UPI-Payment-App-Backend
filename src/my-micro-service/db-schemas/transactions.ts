@@ -7,6 +7,7 @@ export interface Itransactions {
     before_balance : number
     after_balance : number
     transaction_id: string
+    upi_id : string
     isListed: boolean
 };
 
@@ -19,6 +20,7 @@ let mySchema = new Schema({
     before_balance : { type: Number },
     after_balance : { type:Number },
     transaction_id : { type:String },
+    upi_id : { type:String },
     isListed : { type:Boolean, default:false },
 },
 {

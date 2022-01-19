@@ -36,6 +36,11 @@ export default class MAPPGQL {
     async view_transaction_history(args: any, req: any, user:any){
         return await this.userQueries.view_transaction_history(args,req,user)
     }
+
+    @verifyUser()
+    async send_money_to_upi(args: any, req: any, user:any){
+        return await this.userMutations.send_money_to_upi(args,req,user)
+    }
     
     
 }

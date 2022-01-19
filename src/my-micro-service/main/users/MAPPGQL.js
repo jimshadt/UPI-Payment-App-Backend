@@ -30,6 +30,9 @@ class MAPPGQL {
     async view_transaction_history(args, req, user) {
         return await this.userQueries.view_transaction_history(args, req, user);
     }
+    async send_money_to_upi(args, req, user) {
+        return await this.userMutations.send_money_to_upi(args, req, user);
+    }
 }
 __decorate([
     Decorators_1.verifyUser()
@@ -40,4 +43,7 @@ __decorate([
 __decorate([
     Decorators_1.verifyUser()
 ], MAPPGQL.prototype, "view_transaction_history", null);
+__decorate([
+    Decorators_1.verifyUser()
+], MAPPGQL.prototype, "send_money_to_upi", null);
 exports.default = MAPPGQL;
