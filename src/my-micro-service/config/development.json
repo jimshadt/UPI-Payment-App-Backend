@@ -1,0 +1,22 @@
+{
+    "urls": {
+        "dashboard": "http://localhost:8080"
+    },
+    "account_types": {
+        "user": "user",
+        "admin": "admin"
+    },
+    "smtp": {
+        "user": "",
+        "password": "",
+        "host": "smtp.gmail.com",
+        "port": 587,
+        "ssl": false,
+        "tls": true
+    },
+    "jwt": {
+        "secret": "secret",
+        "expiry_time": "6h"
+    },
+    "cors_domains": ["localhost", "localhost:8080"]
+}

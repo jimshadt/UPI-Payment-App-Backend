@@ -25,20 +25,12 @@ const send_money_to_upi = async (args, req, user) => {
         }
         await db.transactions.create({
             from_user: fromUser._id,
-            to_user: toUser,
+            upi_id: toUser,
             transaction_amount: parseFloat(args.amount).toFixed(2),
             before_balance: fromUser.available_creditline,
             after_balance: lessCredit,
             transaction_id: trn_id,
-            isListed: true
-        });
-        await db.transactions.create({
-            from_user: toUser,
-            to_user: fromUser._id,
-            transaction_amount: parseFloat(args.amount).toFixed(2),
-            //before_balance:toUser.available_creditline,
-            //after_balance:addCredit,
-            transaction_id: trn_id
+            is_listed: true
         });
         return { message: "transactions success" };
     }

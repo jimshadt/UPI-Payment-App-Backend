@@ -11,7 +11,7 @@ let mySchema = new Schema({
     after_balance: { type: Number },
     transaction_id: { type: String },
     upi_id: { type: String },
-    isListed: { type: Boolean, default: false },
+    is_listed: { type: Boolean, default: false },
 }, {
     timestamps: true,
 });

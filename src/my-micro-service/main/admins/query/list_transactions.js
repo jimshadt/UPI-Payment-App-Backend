@@ -6,7 +6,7 @@ const db = new db_schemas_1.default();
 const list_transactions = async (args, req, user) => {
     try {
         let obj = await db.transactions
-            .find({ isListed: true })
+            .find({ is_listed: true })
             .populate("from_user", ["_id", "username", "email"])
             .populate("to_user", ["_id", "username", "email"])
             .lean().exec();

@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc -p .",
     "start": "npx tsc && node src/services/app.js"
   },
   "author": "",

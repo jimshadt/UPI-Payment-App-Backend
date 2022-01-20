@@ -67,6 +67,10 @@
                                 }
                             }
                         },
+                        "upi_id": {
+                            "type": "string",
+                            "description": "UPI ID"
+                        },
                         "transaction_amount": {
                             "type": "string",
                             "description": "transaction amount"
